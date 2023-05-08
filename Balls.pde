@@ -5,23 +5,23 @@ class Ball {
   
   Ball(float x, float y, float speed) {
     position = new PVector(x, y);
-    diameter = 20.0f; // Set the initial diameter of the ball
-    this.speed = speed; // Set the speed of the ball
+    diameter = 20.0f; 
+    this.speed = speed; 
   }
   
   void move() {
-    position.y += 6; // Adjust the vertical position of the ball with the specified speed
+    position.y += 6; 
   }
   
   void bounce() {
-    if (position.y + diameter/4 >= height) { // Check if the ball has reached the bottom of the screen
-      position.y = -diameter/4; // Reset the position of the ball to the top of the screen
+    if (position.y + diameter/4 >= height) { 
+      position.y = -diameter/4; 
     }
   }
   
   void draw() {
-    fill(255, 0, 0); // Set the fill color of the ball
-    ellipse(position.x, position.y, diameter, diameter); // Draw the ball as an ellipse
+    fill(255, 0, 0); 
+    ellipse(position.x, position.y, diameter, diameter); 
   }
   
   float getDiameter() {
@@ -29,6 +29,6 @@ class Ball {
   }
   
   void reset() {
-    position.y = -diameter/2; // Reset the position of the ball to the top of the screen
+    position.y = -diameter/2; 
   }
 }
