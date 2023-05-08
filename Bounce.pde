@@ -42,7 +42,7 @@ void setup() {
   imgGoodbye.resize(600, 600);
   minim = new Minim(this);
   backgroundMusic = minim.loadFile("songsong.mp3");
-  gameState = STATE_WELCOME; // Set the initial state to welcome
+  gameState = STATE_WELCOME; 
   reset();
 }
 
@@ -151,7 +151,7 @@ void reset() {
   gameState = STATE_WELCOME;
 
   for (int i = 0; i < NUM_BALLS_TO_WIN; i++) {
-    balls.add(new Ball(random(width), -random(height), random(1, 5))); // Add random speed to the balls
+    balls.add(new Ball(random(width), -random(height), random(1, 5))); 
   }
 }
 
