@@ -11,9 +11,9 @@ class GoodbyePage {
     text("Press any key to play again", width/2, height/2 + 50);
     
     if (keyPressed) {
-      gameState = 0;  // switch back to welcome screen
+      gameState = 0;  
       score = 0;
-      return;         // exit draw loop
+      return;         
     }
   }
 }
