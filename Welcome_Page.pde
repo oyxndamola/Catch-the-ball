@@ -20,8 +20,8 @@ class WelcomePage {
     sketch.text("Press any key to start", sketch.width/2, sketch.height/2 + 50);
 
     if (sketch.keyPressed) {
-      gameState = STATE_PLAYING;  // switch to playing mode
-      return;                    // exit draw loop
+      gameState = STATE_PLAYING;  
+      return;                    
     }
   }
 }
