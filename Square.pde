@@ -14,7 +14,7 @@ class Square {
   }
 
   void update() {
-    // Movement logic handled in keyPressed()
+    
   }
 
   void draw() {
