@@ -1,16 +1,16 @@
-const int SW_pin = 2; // Switch pin
-const int X_pin = 0;  // X-axis pin
-const int Y_pin = 1;  // Y-axis pin
+const int SW_pin = 2; 
+const int X_pin = 0;  
+const int Y_pin = 1; 
 
 void setup() {
-  pinMode(SW_pin, INPUT_PULLUP); // Set switch pin as input with internal pull-up resistor
+  pinMode(SW_pin, INPUT_PULLUP); 
   Serial.begin(9600);
 }
 
 void loop() {
-  int x = analogRead(X_pin); // Read X-axis value
-  int y = analogRead(Y_pin); // Read Y-axis value
-  int buttonState = digitalRead(SW_pin); // Read switch state
+  int x = analogRead(X_pin); 
+  int y = analogRead(Y_pin); 
+  int buttonState = digitalRead(SW_pin); 
 
   Serial.print("X-axis: ");
   Serial.print(x);
